@@ -1,5 +1,4 @@
-require "./lib/main.rb"
-require 'list'
+require 'spec_helper'
 
 describe List do
   describe "#create" do

@@ -1,5 +1,4 @@
-require "./lib/main.rb"
-require 'node'
+require 'spec_helper'
 
 describe Node do
   describe "#create" do
