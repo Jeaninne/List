@@ -54,8 +54,10 @@ class List
       puts temp_node.value              #print the value
       temp_node=temp_node.node_to_go    #and go to the next
     end
+    return true
     rescue
       puts "The list is empty"
+      return nil
   end
 
   #delete node wth certain index from list
@@ -79,4 +81,3 @@ class List
       puts "There is no such index"
   end
 end
-
