@@ -26,7 +26,7 @@ describe List do
       new_list1.add_node(1)
       new_list1.add_node(2)
       new_list1.delete_node(1)
-      new_list1.print_list.should == 1
+      new_list1.show_value(1).should == 1
       new_list1.delete_node(1)
       new_list1.print_list.should be_nil
     end
