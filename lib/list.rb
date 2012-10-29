@@ -44,6 +44,7 @@ class List
     rescue
       puts "There is no such index"
   end
+  
 
   #print all the values in list
   def print_list
@@ -62,7 +63,7 @@ class List
    if index.class != Fixnum then raise
     else
       if index<1 then raise
-      else if index == 1 then puts @head.value
+      else if index == 1 then return @head.value
       else
         temp_node=@head
         i=1
@@ -70,7 +71,7 @@ class List
           temp_node.node_to_go == nil ? raise  : temp_node=temp_node.node_to_go
           i+=1
         end
-        puts temp_node.value
+        return temp_node.value
       end
       end
     end
@@ -78,3 +79,4 @@ class List
       puts "There is no such index"
   end
 end
+
