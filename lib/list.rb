@@ -11,7 +11,6 @@ attr_accessor :value, :node_to_go
 end
 
 class List
-  # initialization empty list (no params)
   def initialize
     @head=nil
   end
@@ -29,12 +28,10 @@ class List
     else
     if index<1 then raise
      else
-     #check out if we need to delete first element
      if index == 1 then @head=@head.node_to_go
       else
         temp_node=@head
         i=1
-    #this is the cycle for seek previos element
         while i<(index-1) do
           temp_node.node_to_go == nil ? raise  : temp_node=temp_node.node_to_go
           i+=1
@@ -62,18 +59,14 @@ class List
 
   #delete node wth certain index from list
   def show_value(index)
-  #if index is not a number - throw the exception
    if index.class != Fixnum then raise
     else
-  #if index less then 1 throw the exception
       if index<1 then raise
       else if index == 1 then puts @head.value
       else
         temp_node=@head
         i=1
-  #this is the cycle for seek element
         while i<(index) do
-  #throw exeption if index bigger then list length
           temp_node.node_to_go == nil ? raise  : temp_node=temp_node.node_to_go
           i+=1
         end
