@@ -94,12 +94,3 @@ class List
       puts "There is no such index"
   end
 end
-
-a=List.new
-a.add_node(4)
-a.add_node(3)
-a.add_node(2)
-a.add_node(1)
-s=nil
-a.delete_node(5)
-a.print_list
