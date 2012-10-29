@@ -6,8 +6,5 @@ describe Node do
       new_node=Node.new(12)
       new_node.value.should be 12
     end
-    it "Should throw an exception due to the lack of params" do
-      new_node=Node.new().should raise_error()
-    end
   end
 end
