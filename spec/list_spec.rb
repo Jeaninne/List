@@ -28,7 +28,7 @@ describe List do
       new_list1.delete_node(1)
       new_list1.show_value(1).should == 1
       new_list1.delete_node(1)
-      new_list1.print_list.should be_nil
+      new_list1.show_value(1).should be_nil
     end
     it "Should throw an exception if index less then 0" do
       new_list1=List.new
